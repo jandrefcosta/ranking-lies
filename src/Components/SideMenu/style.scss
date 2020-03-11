@@ -1,0 +1,28 @@
+
+.button-menu{ 
+  position: absolute !important;
+  top: 0; 
+  right: -64px;
+  i{
+    font-size: 35px;
+    line-height: 1;
+  }
+}
+.button-menu-close{
+  position: absolute !important;
+  top: 0; 
+  right: 0;
+  i{
+    font-size: 35px;
+    line-height: 1;
+    color:#fff;
+  }
+}
+
+.menuIsOpened{
+  .bm-menu{
+    .button-menu{
+      display: none !important;
+    }
+  }
+}
