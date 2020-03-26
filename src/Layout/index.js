@@ -3,18 +3,14 @@ import { withRouter } from 'react-router-dom'
 
 import SideMenu from '../Components/SideMenu'
 
-
 import './style.scss'
+import Header from '../Components/Header'
 
 const listPagesWithoutMenu = [
   '/',
   '/login',
   '/new-user'
 ]
-
-const checkRouter = (location) => {
-  console.log(location)
-}
 
 function Layout(props) {
 
@@ -30,8 +26,9 @@ function Layout(props) {
 
   return (
     <>
-      <SideMenu MainID={"mainContatent"} />
-      <div id="mainContatent">
+      <SideMenu MainID={"mainContent"} />
+      <div id="mainContent">
+        <Header />
         <main className="container">
           {props.children}
         </main>

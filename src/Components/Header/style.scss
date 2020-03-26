@@ -1,0 +1,14 @@
+header{
+  h2{
+    margin: 0;
+    margin-left: 55px;
+    transition: all .3s ease-in-out;
+  }
+
+  .menuIsOpened & {
+    h2{
+      margin-left: 15px;
+    }
+  }
+}
+

@@ -1,10 +1,12 @@
 import React from 'react'
 
-function Header({ title = 'Default Name {title}' }) {
+import './style.scss';
+
+function Header({ title = 'Ranking Lies' }) {
   return (
-    <>
-      <h1>{title}</h1>
-    </>
+    <header>
+      <h2>{title}</h2>
+    </header>
   )
 }
 

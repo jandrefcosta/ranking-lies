@@ -14,7 +14,7 @@ import StarIcon from '@material-ui/icons/Star';
 
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 
-function Home() {
+function ListLies() {
 
   const ranking = []
 
@@ -23,7 +23,6 @@ function Home() {
 
 
   const handleClickOpen = (e) => {
-    console.log(e)
     setModalInformation(e)
     setOpen(true);
   };
@@ -59,6 +58,7 @@ function Home() {
           </Button>
         </MuiDialogActions>
       </Dialog>
+
       <div className="container">
         <List>
           {ranking.map((item, index) => {
@@ -77,4 +77,4 @@ function Home() {
   )
 }
 
-export default Home
+export default ListLies

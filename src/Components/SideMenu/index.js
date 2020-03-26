@@ -32,7 +32,6 @@ function SideMenu({ MainID }) {
     >
       <Link to="/ranking" onClick={HandlerClick}>Ranking</Link>
       <Link to="/new-lie" onClick={HandlerClick}>Nova Mentira</Link>
-      <Link to="/new-user" onClick={HandlerClick}>Cadastro</Link>
 
       <Button className="button-menu" onClick={openMenu}>
         <i className="material-icons">menu</i>

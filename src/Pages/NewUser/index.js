@@ -1,36 +1,31 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Swal from 'sweetalert2'
+import { Link, useHistory } from 'react-router-dom'
 
 import { FormControl, TextField, Grid, Button } from '@material-ui/core'
 
 import { registerUser } from '../../Services/'
+import { PopupInfo } from '../../Components/Popup'
 
 import './style.scss'
 
 function NewUser() {
 
   const [formRegister, setFormRegister] = useState({})
+  const history = useHistory()
 
   const HandlerSubmit = async (e) => {
     e.preventDefault()
     if (Object.keys(formRegister).length < 2) {
-      Swal.fire({
-        heightAuto: false,
-        icon: 'warning',
-        text: 'Preencha todos os dados'
-      })
-      return
+      PopupInfo('warning', null, 'Preencha todos os dados')
+      return;
     }
 
     const data = await registerUser(formRegister);
+
     if (data.error) {
-      Swal.fire({
-        heightAuto: false,
-        icon: 'error',
-        title: 'Oops...',
-        text: data.error
-      })
+      PopupInfo('error', 'Oops...', data.error)
+    } else {
+      PopupInfo('success', 'Heeey', 'Registro realizado com sucesso', () => { history.push('/') })
     }
   }
 
