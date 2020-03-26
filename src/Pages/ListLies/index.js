@@ -16,11 +16,7 @@ import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 
 function Home() {
 
-  const ranking = [
-    { resumo: "Minha esposa é pica grossa", points: 150 },
-    { resumo: "Fui sequestrado", points: 115 },
-    { resumo: "Vendi um carro ontem também, igual ao seu", points: 45 }
-  ]
+  const ranking = []
 
   const [open, setOpen] = useState(false);
   const [modalInformation, setModalInformation] = useState(false);
