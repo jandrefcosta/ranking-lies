@@ -1,0 +1,2 @@
+(this["webpackJsonpranking-lies"]=this["webpackJsonpranking-lies"]||[]).push([[11],{217:function(n,e,t){"use strict";t.r(e);var a=t(0),i=t.n(a);e.default=function(){return i.a.createElement("div",{className:"container"},i.a.createElement("h1",null,"Not found"))}}}]);
+//# sourceMappingURL=11.00f7da87.chunk.js.map

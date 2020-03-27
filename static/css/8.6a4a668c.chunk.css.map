@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,iBACE,eAAgB,CAChB,UAAW,CACX,WAAY,CACZ,YAAa,CACb,kBAAmB,CACnB,aAAc","file":"8.6a4a668c.chunk.css","sourcesContent":[".login-container{\r\n  max-width: 480px;\r\n  width: 100%;\r\n  height: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  margin: 0 auto;\r\n}"]}
