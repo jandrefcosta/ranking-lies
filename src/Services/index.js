@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-axios.defaults.baseURL = 'http://localhost:3033/';
+axios.defaults.baseURL = 'https://ranking-lies-server.herokuapp.com/';
 
 
 axios.interceptors.request.use(function (config) {
