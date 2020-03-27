@@ -1,22 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54f1d4b53bf0a3ff4c9024643594c5be",
+    "revision": "cf940ec816fd64c3ef2fbe4f5899f641",
     "url": "/ranking-lies/index.html"
   },
   {
-    "revision": "cb7d4a90a429b9325f85",
+    "revision": "0aea1393d4775dd5a785",
     "url": "/ranking-lies/static/css/10.59122282.chunk.css"
   },
   {
-    "revision": "7c641e4646b1b072549d",
+    "revision": "2c8c83e017577a61f16c",
     "url": "/ranking-lies/static/css/7.08bf8de7.chunk.css"
   },
   {
-    "revision": "7521ddf4f4e9afcc3595",
+    "revision": "0d99ecefa557455f9b04",
     "url": "/ranking-lies/static/css/8.85b49715.chunk.css"
   },
   {
-    "revision": "f1b2f36edb7372520058",
+    "revision": "e625fdd9241b142ae370",
     "url": "/ranking-lies/static/css/9.59122282.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ranking-lies/static/js/1.fb6676b2.chunk.js"
   },
   {
-    "revision": "cb7d4a90a429b9325f85",
-    "url": "/ranking-lies/static/js/10.f79ca899.chunk.js"
+    "revision": "0aea1393d4775dd5a785",
+    "url": "/ranking-lies/static/js/10.d57ff28f.chunk.js"
   },
   {
     "revision": "7917cb29d8aab86b217c",
@@ -56,23 +56,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ranking-lies/static/js/6.db78f586.chunk.js"
   },
   {
-    "revision": "7c641e4646b1b072549d",
-    "url": "/ranking-lies/static/js/7.61053ba9.chunk.js"
+    "revision": "2c8c83e017577a61f16c",
+    "url": "/ranking-lies/static/js/7.27b48306.chunk.js"
   },
   {
-    "revision": "7521ddf4f4e9afcc3595",
-    "url": "/ranking-lies/static/js/8.ed10a946.chunk.js"
+    "revision": "0d99ecefa557455f9b04",
+    "url": "/ranking-lies/static/js/8.7d90bb1a.chunk.js"
   },
   {
-    "revision": "f1b2f36edb7372520058",
-    "url": "/ranking-lies/static/js/9.c493c9ad.chunk.js"
+    "revision": "e625fdd9241b142ae370",
+    "url": "/ranking-lies/static/js/9.82d2cb13.chunk.js"
   },
   {
     "revision": "2769f1e84c5516592403",
     "url": "/ranking-lies/static/js/main.69797cf6.chunk.js"
   },
   {
-    "revision": "4e9f5799e5b407f24e11",
-    "url": "/ranking-lies/static/js/runtime-main.751921c0.js"
+    "revision": "63dbcb760398fef8dd7a",
+    "url": "/ranking-lies/static/js/runtime-main.f9821022.js"
   }
 ]);
