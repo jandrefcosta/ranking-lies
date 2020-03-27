@@ -5,7 +5,7 @@ import { FormControl, TextField, Grid, Button } from '@material-ui/core'
 import CreatableSelect from 'react-select/creatable';
 import makeAnimated from 'react-select/animated';
 import { PopupInfo } from '../../Components/Popup';
-import { registerLie } from '../../Services';
+import { registerLies } from '../../Services';
 
 const animatedComponents = makeAnimated();
 
@@ -49,15 +49,29 @@ function NewLie() {
       PopupInfo('warning', null, 'Preencha todos os dados')
       return;
     }
-    const data = await registerLie(request);
+    const data = await registerLies(request);
+    if (data.error) {
+      PopupInfo('error', 'Oops...', data.error)
+    } else {
+      PopupInfo('success', 'Heeey', 'Registro realizado com sucesso', () => { HandlerClearInputs() })
+    }
+  }
+
+  const HandlerClearInputs = () => {
+    console.log("clear")
+    setFormRegisterLie({})
+    setSelectCategory()
   }
 
   return (
     <>
-      <h1>Cadastrar nova mentira ?!</h1>
+
       <form onSubmit={HandlerSubmit}>
-        <Grid container>
+        <Grid container justify="center">
           <Grid container item xs={6} spacing={4}>
+            <Grid item xs={12}>
+              <h1>Cadastrar nova mentira ?!</h1>
+            </Grid>
             <Grid item xs={12}>
               <FormControl fullWidth>
                 <TextField name="resumo" label="resumo" onChange={HandlerChange} />

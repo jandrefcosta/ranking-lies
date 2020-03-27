@@ -21,7 +21,17 @@ export const login = async (request) => {
   return data || error;
 }
 
-export const registerLie = async (request) => {
+export const registerLies = async (request) => {
   const { data, error } = await axios.post("/lies", request);
+  return data || error;
+}
+
+export const deleteLies = async (id) => {
+  const { data, error } = await axios.delete(`/lies/${id}`);
+  return data || error;
+}
+
+export const listLies = async (request) => {
+  const { data, error } = await axios.get("/lies", request);
   return data || error;
 }

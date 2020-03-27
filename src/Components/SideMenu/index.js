@@ -30,7 +30,7 @@ function SideMenu({ MainID }) {
       customCrossIcon={false}
       bodyClassName="menuIsOpened"
     >
-      <Link to="/ranking" onClick={HandlerClick}>Ranking</Link>
+      <Link to="/list-lies" onClick={HandlerClick}>Ranking</Link>
       <Link to="/new-lie" onClick={HandlerClick}>Nova Mentira</Link>
 
       <Button className="button-menu" onClick={openMenu}>
